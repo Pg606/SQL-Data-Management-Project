@@ -14,24 +14,37 @@ The dataset used in this project is derived from the SQL Server Sample Database 
 Database Source : https://www.sqlservertutorial.net/getting-started/sql-server-sample-database/
 
 The dataset comprises two schemas: sales and production, which include the following tables:
-sales.stores: Information about each store.
-sales.staffs: Information about staff members.
-sales.customers: Customer details.
-sales.orders: Sales order headers.
-sales.order_items: Line items of sales orders.
-production.categories: Bike categories.
-production.brands: Bike brand information.
-production.products: Product details.
-production.stocks: Inventory information for products in stores.
+
+-sales.stores: Information about each store.
+
+-sales.staffs: Information about staff members.
+
+-sales.customers: Customer details.
+
+-sales.orders: Sales order headers.
+
+-sales.order_items: Line items of sales orders.
+
+-production.categories: Bike categories.
+
+-production.brands: Bike brand information.
+
+-production.products: Product details.
+
+-production.stocks: Inventory information for products in stores.
 
 # Data Cleaning
 Data cleaning is a crucial step to ensure the dataset is accurate, consistent, and free from errors. In this project, data cleaning involved several tasks:
 
-Modifying Column Data Types: Ensuring columns have appropriate data types.
-Renaming Columns: Renaming columns for clarity and consistency.
-Handling Missing Data: Replacing missing values with defaults and deleting rows with missing critical values.
-Dealing with Outliers: Identifying and handling outliers to maintain data integrity.
-Data cleaning is essential to avoid errors in data analysis, ensure data integrity, and provide accurate insights.
+-Modifying Column Data Types: Ensuring columns have appropriate data types.
+
+-Renaming Columns: Renaming columns for clarity and consistency.
+
+-Handling Missing Data: Replacing missing values with defaults and deleting rows with missing critical values.
+
+-Dealing with Outliers: Identifying and handling outliers to maintain data integrity.
+
+-Data cleaning is essential to avoid errors in data analysis, ensure data integrity, and provide accurate insights.
 
 # Entity-Relation Diagram (ERD)
 
