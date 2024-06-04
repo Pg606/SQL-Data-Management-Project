@@ -50,47 +50,69 @@ Data cleaning is a crucial step to ensure the dataset is accurate, consistent, a
 
 The ERD visually represents the relationships between different entities in the BikeStores database. Here are the main relationships:
 
-Customers to Orders: One-to-many relationship (a customer can place multiple orders).
-Orders to Order_Items: One-to-many relationship (an order can have multiple items).
-Order_Items to Products: Many-to-one relationship (an order item refers to a single product).
-Staffs to Stores: Many-to-one relationship (multiple staff members can work at one store).
-Products to Categories and Brands: Many-to-one relationship (each product belongs to a category and a brand).
+-Customers to Orders: One-to-many relationship (a customer can place multiple orders).
+
+-Orders to Order_Items: One-to-many relationship (an order can have multiple items).
+
+-Order_Items to Products: Many-to-one relationship (an order item refers to a single product).
+
+-Staffs to Stores: Many-to-one relationship (multiple staff members can work at one store).
+
+-Products to Categories and Brands: Many-to-one relationship (each product belongs to a category and a brand).
 
 # Data Normalization
 
 Normalization is the process of organizing data to minimize redundancy and improve data integrity. The tables were normalized into the following structure:
 
-Customers Table: Holds customer contact and address information.
-Orders Table: Contains order details and statuses.
-Order_Items Table: Contains line items for each order.
-Staffs Table: Stores information about staff members and their managers.
-Stores Table: Contains store details.
-Categories Table: Stores bike categories.
-Products Table: Holds product details including brand and category.
-Brands Table: Contains brand information.
+-Customers Table: Holds customer contact and address information.
+
+-Orders Table: Contains order details and statuses.
+
+-Order_Items Table: Contains line items for each order.
+
+-Staffs Table: Stores information about staff members and their managers.
+
+-Stores Table: Contains store details.
+
+-Categories Table: Stores bike categories.
+
+-Products Table: Holds product details including brand and category.
+
+-Brands Table: Contains brand information.
 
 # Queries
 
-Retrieve All Bike Categories: Lists all available bike categories from the categories table.
-Retrieve Unique Product Names: Identifies distinct product names in the inventory, ensuring no duplicates.
-Count Customers by State: Analyzes customer distribution by counting the number of customers in each state.
-Calculate Average Discount: Determines the average discount given on all orders, providing insight into pricing strategies.
-Total Items Ordered: Calculates the total quantity of items sold, reflecting overall sales volume.
-Products with Low Discounts: Finds products with discounts of 20% or less, helping to identify less-discounted items.
-Average Sale Price of High-Value Items: Computes the average sale price for items listed at $1000 or more, post-discount.
-Customers in Specific States: Filters customers based in California and New York to analyze regional customer data.
-Products Starting with 'T': Searches for products whose names begin with the letter 'T', using pattern matching.
-Orders Handled by Staff: Counts the number of orders each staff member has processed, ranked by the number of orders.
-Top Selling Products: Identifies the most sold products and calculates their total sales value.
-Product Sales Details: Retrieves product details, including the total quantity sold and list price, sorted by quantity sold.
+-Retrieve All Bike Categories: Lists all available bike categories from the categories table.
+
+-Retrieve Unique Product Names: Identifies distinct product names in the inventory, ensuring no duplicates.
+
+-Count Customers by State: Analyzes customer distribution by counting the number of customers in each state.
+
+-Calculate Average Discount: Determines the average discount given on all orders, providing insight into pricing strategies.
+
+-Total Items Ordered: Calculates the total quantity of items sold, reflecting overall sales volume.
+
+-Products with Low Discounts: Finds products with discounts of 20% or less, helping to identify less-discounted items.
+
+-Average Sale Price of High-Value Items: Computes the average sale price for items listed at $1000 or more, post-discount.
+
+-Customers in Specific States: Filters customers based in California and New York to analyze regional customer data.
+
+-Products Starting with 'T': Searches for products whose names begin with the letter 'T', using pattern matching.
+
+-Orders Handled by Staff: Counts the number of orders each staff member has processed, ranked by the number of orders.
+
+-Top Selling Products: Identifies the most sold products and calculates their total sales value.
+
+-Product Sales Details: Retrieves product details, including the total quantity sold and list price, sorted by quantity sold.
 
 # Visualizations
 
-Line Plot of Orders Over Time: Shows the 30-day moving average of orders for each store, distinguishing trends by color.
+-Line Plot of Orders Over Time: Shows the 30-day moving average of orders for each store, distinguishing trends by color.
 
-Customer Characteristics Subplots: Uses count plots to visualize customer purchase frequency, recency, and buying power, with a shared y-axis for comparison.
+-Customer Characteristics Subplots: Uses count plots to visualize customer purchase frequency, recency, and buying power, with a shared y-axis for comparison.
 
-Bar Plot of Average Units Sold by Category: Illustrates the average units sold per month, broken down by product category, with error bars for precision.
+-Bar Plot of Average Units Sold by Category: Illustrates the average units sold per month, broken down by product category, with error bars for precision.
 
 These visualizations help in understanding sales trends, customer behavior, and product performance, offering actionable insights for store management.
 
